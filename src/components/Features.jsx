@@ -1,54 +1,46 @@
 import React from 'react';
-//import pay from '../assets/Phone.png'
-//import { PhoneVibrate,Tv,Lightbulb,Wifi} from 'react-bootstrap-icons';
+import pay from '../assets/vector2.png'
+import { PhoneVibrate,Tv,Lightbulb,Wifi} from 'react-bootstrap-icons';
 
 
 const Features = () => {
   return (
-    <div className="bg-white py-24 sm:py-32">
-    <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
-        Trusted by the world’s most innovative teams
-      </h2>
-      <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-        <img
-          className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://icons8.com/icon/L9ByuHGgbUNK/smartphone"
-          alt="Transistor"
-          width={158}
-          height={48}
-        />
-        <img
-          className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-          alt="Reform"
-          width={158}
-          height={48}
-        />
-        <img
-          className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-          alt="Tuple"
-          width={158}
-          height={48}
-        />
-        <img
-          className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
-          alt="SavvyCal"
-          width={158}
-          height={48}
-        />
-        <img
-          className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
-          alt="Statamic"
-          width={158}
-          height={48}
-        />
-      </div>
+    <div>
+        <h1 className='md:text-4xl mb-10 text-center sm:text-3xl text-2xl font-bold'>
+          Unlimited Features, Unlimited Fun
+        </h1>
+       <div className='max-w-[1240px] mx-auto grid lg:grid-cols-2 '>
+        <div className='grid sm:grid-cols-2 lg:grid-cols-2'>
+          <div className=' md:mx-auto justify-center py-2'>
+              <PhoneVibrate size={70} className="mx-auto text-blue-600"/>
+            <h4 className='md:text-2xl font-bold text-center'>
+              {"Airtime Purchase"}
+            </h4>
+          </div>
+          <div className='py-2'>
+              <Tv size={70} className="mx-auto text-blue-600"/>
+            <h4 className='md:text-2xl font-bold text-center'>
+              {"Pay for Cable Tv"}
+            </h4>
+          </div>
+          <div className='py-2'>
+              <Lightbulb size={70} className="mx-auto text-blue-600"/>
+            <h4 className='md:text-2xl font-bold text-center'>
+              {"Pay Electricity Bill"}
+            </h4>
+          </div>
+          <div className='py-2 justify-center'>
+              <Wifi size={70} className="mx-auto text-blue-600"/>
+            <h4 className='md:text-2xl font-bold text-center'>
+              {"Purchase Internet Access"}
+            </h4>
+          </div>
+        </div>
+        <div className='lg:col-2 py-2'>
+          <img className='w-[350px] mt-10 mx-auto my-4' src={pay} alt="/"/>
+        </div>
     </div>
-  </div>
+       </div>
   )
 }
 
